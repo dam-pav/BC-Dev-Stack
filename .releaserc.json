@@ -1,0 +1,26 @@
+{
+  "branches": ["main"],
+  "tagFormat": "v${version}",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "npm version ${nextRelease.version} --no-git-tag-version && npx vsce package --out bc-dev-stack-${nextRelease.version}.vsix",
+        "publishCmd": "npx vsce publish --packagePath bc-dev-stack-${nextRelease.version}.vsix && oras push ghcr.io/dam-pav/bc-dev-stack:${nextRelease.version} --artifact-type application/vnd.microsoft.vscode.extension bc-dev-stack-${nextRelease.version}.vsix:application/vsix"
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "bc-dev-stack-${nextRelease.version}.vsix",
+            "label": "BC Dev Stack ${nextRelease.version} VSIX"
+          }
+        ]
+      }
+    ]
+  ]
+}

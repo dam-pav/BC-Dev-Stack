@@ -1,0 +1,12 @@
+
+
+# Local dependencies and generated extension artifacts
+node_modules/
+out/
+.codacy/
+*.vsix
+*.tgz
+*.log
+
+# Editor-local files
+.vscode-test/

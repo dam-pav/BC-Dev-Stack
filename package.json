@@ -1,0 +1,95 @@
+{
+  "name": "bc-dev-stack",
+  "displayName": "BC Dev Stack",
+  "description": "A curated Visual Studio Code extension stack for Microsoft Dynamics 365 Business Central development.",
+  "version": "0.0.0",
+  "publisher": "dam-pav",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dam-pav/bc-dev-stack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dam-pav/bc-dev-stack/issues"
+  },
+  "homepage": "https://github.com/dam-pav/bc-dev-stack#readme",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "AL",
+    "Business Central",
+    "Dynamics 365",
+    "extension pack"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "extensionPack": [
+    "davidfeldhoff.al-codeactions",
+    "rasmus.al-formatter",
+    "ms-dynamics-smb.al",
+    "vjeko.vjeko-al-mcp-bridge",
+    "wbrakowski.al-navigator",
+    "martonsagi.al-object-designer",
+    "jamespearson.al-test-runner",
+    "bartpermentier.al-toolbox",
+    "rasmus.al-var-helper",
+    "andrzejzwierzchowski.al-code-outline",
+    "chunsen.bracket-select",
+    "dam-pav.bc-dev-toolset",
+    "stefanmaron.businesscentral-lintercop",
+    "ms-azuretools.vscode-containers",
+    "nwallace.createguid",
+    "ms-azuretools.vscode-docker",
+    "martonsagi.nav-cside-color-theme",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
+    "github.remotehub",
+    "eamodio.gitlens",
+    "nabsolutions.nab-al-tools",
+    "cweijan.vscode-office",
+    "ryu1kn.partial-diff",
+    "ms-vscode.powershell",
+    "wayou.vscode-todo-highlight",
+    "gruntfuggly.todo-tree",
+    "vscode-icons-team.vscode-icons",
+    "waldo.crs-al-language-extension",
+    "vjeko.vjeko-al-objid",
+    "jeremyvyska.bc-code-intelligence"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "bcDevStack.reviewOptionalExtensions",
+        "title": "BC Dev Stack: Review Optional Extensions"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "check": "npm run compile && npm run lint",
+    "lint": "eslint src --max-warnings 0",
+    "package": "vsce package",
+    "release": "semantic-release",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/github": "^11.0.3",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "@types/node": "^24.0.14",
+    "@types/vscode": "^1.96.0",
+    "@vscode/vsce": "^3.6.0",
+    "eslint": "^9.31.0",
+    "semantic-release": "^25.0.7",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.37.0"
+  }
+}

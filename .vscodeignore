@@ -1,0 +1,10 @@
+.github/**
+.vscode/**
+.codacy/**
+.gitignore
+.releaserc.json
+src/**
+eslint.config.mjs
+tsconfig.json
+*.vsix
+*.log
