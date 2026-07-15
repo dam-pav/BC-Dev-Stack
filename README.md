@@ -1,13 +1,13 @@
-# BC Dev Stack
+# Business Central Developer's Stack
 
-BC Dev Stack is a curated VS Code extension pack for Microsoft Dynamics 365 Business Central AL development.
+Business Central Developer's Stack is a curated VS Code extension pack for Microsoft Dynamics 365 Business Central AL development.
 
 Installing the pack installs all included extensions. Two tools are intentionally treated as optional:
 
 - `vjeko.vjeko-al-objid`
 - `jeremyvyska.bc-code-intelligence`
 
-VS Code's public Extension API does not permit one extension to disable another. On first activation, BC Dev Stack therefore asks the user to review these two extensions and opens the Extensions view so they can be disabled. The prompt can be reopened with **BC Dev Stack: Review Optional Extensions**.
+VS Code's public Extension API does not permit one extension to disable another. On first activation, Business Central Developer's Stack therefore asks the user to review these two extensions and opens the Extensions view so they can be disabled. The prompt can be reopened with **Business Central Developer's Stack: Review Optional Extensions**.
 
 ## Releases
 

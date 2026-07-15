@@ -54,9 +54,9 @@ jobs:
             oras push "ghcr.io/dam-pav/bc-dev-stack:${VERSION}" \
               --artifact-type application/vnd.microsoft.vscode.extension \
               "${VSIX}:application/vsix"
-            gh release create "v${VERSION}" "${VSIX}#BC Dev Stack ${VERSION} VSIX" \
+            gh release create "v${VERSION}" "${VSIX}#Business Central Developer's Stack ${VERSION} VSIX" \
               --title "v${VERSION}" \
-              --notes "Initial BC Dev Stack release."
+              --notes "Initial Business Central Developer's Stack release."
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

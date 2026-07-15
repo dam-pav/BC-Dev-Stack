@@ -14,7 +14,7 @@ async function reviewOptionalExtensions(): Promise<void> {
     .join('\n');
 
   await vscode.window.showInformationMessage(
-    `BC Dev Stack installs these optional extensions in a disabled-by-default role. VS Code does not allow extension packs to disable other extensions automatically. Disable any you do not want from the Extensions view:\n\n${extensionList}`,
+    `Business Central Developer's Stack installs these optional extensions in a disabled-by-default role. VS Code does not allow extension packs to disable other extensions automatically. Disable any you do not want from the Extensions view:\n\n${extensionList}`,
     { modal: true },
     'Open Extensions'
   ).then(async (choice) => {

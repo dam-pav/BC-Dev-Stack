@@ -1,6 +1,6 @@
 {
   "name": "bc-dev-stack",
-  "displayName": "BC Dev Stack",
+  "displayName": "Business Central Developer's Stack",
   "description": "A curated Visual Studio Code extension stack for Microsoft Dynamics 365 Business Central development.",
   "version": "0.0.0",
   "publisher": "dam-pav",
@@ -66,7 +66,7 @@
     "commands": [
       {
         "command": "bcDevStack.reviewOptionalExtensions",
-        "title": "BC Dev Stack: Review Optional Extensions"
+        "title": "Business Central Developer's Stack: Review Optional Extensions"
       }
     ]
   },
