@@ -41,7 +41,24 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}" | oras login ghcr.io --username "${{ github.actor }}" --password-stdin
 
       - name: Release to Marketplace, GitHub Packages, and GitHub Releases
-        run: npm run release
+        shell: bash
+        run: |
+          if git tag --list 'v*' | grep -q .; then
+            npm run release
+          else
+            VERSION="0.0.0"
+            VSIX="bc-dev-stack-${VERSION}.vsix"
+
+            npx vsce package --out "${VSIX}"
+            npx vsce publish --packagePath "${VSIX}"
+            oras push "ghcr.io/dam-pav/bc-dev-stack:${VERSION}" \
+              --artifact-type application/vnd.microsoft.vscode.extension \
+              "${VSIX}:application/vsix"
+            gh release create "v${VERSION}" "${VSIX}#BC Dev Stack ${VERSION} VSIX" \
+              --title "v${VERSION}" \
+              --notes "Initial BC Dev Stack release."
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}

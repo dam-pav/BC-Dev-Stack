@@ -11,7 +11,7 @@ VS Code's public Extension API does not permit one extension to disable another.
 
 ## Releases
 
-Releases are generated from Conventional Commits merged into `main`:
+The first successful release from an untagged repository publishes version `0.0.0`. Later releases are generated from Conventional Commits merged into `main`:
 
 - `fix:` creates a patch release.
 - `feat:` creates a minor release.
