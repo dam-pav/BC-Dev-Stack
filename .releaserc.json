@@ -16,8 +16,8 @@
       {
         "assets": [
           {
-            "path": "bc-dev-stack-${nextRelease.version}.vsix",
-            "label": "Business Central Developer's Stack ${nextRelease.version} VSIX"
+            "path": "bc-dev-stack-*.vsix",
+            "label": "Business Central Developer's Stack VSIX"
           }
         ]
       }
