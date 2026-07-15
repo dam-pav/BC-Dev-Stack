@@ -7,12 +7,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dam-pav/bc-dev-stack.git"
+    "url": "https://github.com/dam-pav/BC-Dev-Stack.git"
   },
   "bugs": {
-    "url": "https://github.com/dam-pav/bc-dev-stack/issues"
+    "url": "https://github.com/dam-pav/BC-Dev-Stack/issues"
   },
-  "homepage": "https://github.com/dam-pav/bc-dev-stack#readme",
+  "homepage": "https://github.com/dam-pav/BC-Dev-Stack#readme",
   "engines": {
     "vscode": "^1.96.0"
   },
