@@ -1,5 +1,7 @@
 # Business Central Developer's Stack
 
+![Business Central Developer's Stack logo](assets/bc-dev-stack.logo.png)
+
 Business Central Developer's Stack is a curated VS Code extension pack for Microsoft Dynamics 365 Business Central AL development.
 
 Installing the pack installs all included extensions. Two tools are intentionally treated as optional:
