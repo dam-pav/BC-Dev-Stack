@@ -21,31 +21,13 @@ async function reviewOptionalExtensions(): Promise<void> {
   const choice = await vscode.window.showInformationMessage(
     `Business Central Developer's Stack installs these optional extensions in a disabled-by-default role. VS Code does not allow extension packs to disable other extensions automatically. Disable any you do not want from the Extensions view:\n\n${extensionList}`,
     { modal: true },
-    'Choose Extension'
+    'Open Extensions'
   );
 
-  if (choice !== 'Choose Extension') {
-    return;
-  }
-
-  const selected = await vscode.window.showQuickPick(
-    OPTIONAL_EXTENSIONS.map((extension) => ({
-      label: extension.label,
-      description: extension.id,
-      detail: vscode.extensions.getExtension(extension.id)
-        ? 'Installed — open this extension to enable or disable it'
-        : 'Installation may still be completing'
-    })),
-    {
-      title: "Business Central Developer's Stack: Review Optional Extensions",
-      placeHolder: 'Choose an extension to open; run the command again to review the other one'
-    }
-  );
-
-  if (selected) {
+  if (choice === 'Open Extensions') {
     await vscode.commands.executeCommand(
       'workbench.extensions.search',
-      `@id:${selected.description}`
+      OPTIONAL_EXTENSIONS.map((extension) => `@id:${extension.id}`).join(' ')
     );
   }
 }

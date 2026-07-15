@@ -37,6 +37,6 @@ Business Central Developer's Stack is a curated VS Code extension pack for Micro
 
 ## Optional extensions
 
-AL Object ID Ninja and BC Code Intelligence are installed with the stack but intentionally presented as optional because object-ID governance and AI-assisted development depend on team preferences. VS Code does not allow an extension pack to disable another extension automatically, so the stack prompts you to choose either extension and opens its exact Extensions view entry where you can disable it.
+AL Object ID Ninja and BC Code Intelligence are installed with the stack but intentionally presented as optional because object-ID governance and AI-assisted development depend on team preferences. VS Code does not allow an extension pack to disable another extension automatically, so the stack opens both exact Extensions view entries where you can disable either one.
 
-To review the other extension or revisit that choice later, run **Business Central Developer's Stack: Review Optional Extensions** from the Command Palette.
+To revisit that choice later, run **Business Central Developer's Stack: Review Optional Extensions** from the Command Palette.
