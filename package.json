@@ -19,6 +19,7 @@
   "categories": [
     "Extension Packs"
   ],
+  "icon": "assets/bc-dev-stack.logo.png",
   "keywords": [
     "AL",
     "Business Central",
@@ -43,7 +44,6 @@
     "chunsen.bracket-select",
     "dam-pav.bc-dev-toolset",
     "stefanmaron.businesscentral-lintercop",
-    "ms-azuretools.vscode-containers",
     "nwallace.createguid",
     "ms-azuretools.vscode-docker",
     "martonsagi.nav-cside-color-theme",

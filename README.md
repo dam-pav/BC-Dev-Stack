@@ -1,30 +1,42 @@
 # Business Central Developer's Stack
 
-Business Central Developer's Stack is a curated VS Code extension pack for Microsoft Dynamics 365 Business Central AL development.
+Business Central Developer's Stack is a curated VS Code extension pack for Microsoft Dynamics 365 Business Central AL development. Install it once to get a practical set of tools for writing, reviewing, testing, navigating, and maintaining AL projects.
 
-Installing the pack installs all included extensions. Two tools are intentionally treated as optional:
+## Included extensions
 
-- `vjeko.vjeko-al-objid`
-- `jeremyvyska.bc-code-intelligence`
+- **[AL CodeActions](https://marketplace.visualstudio.com/items?itemName=davidfeldhoff.al-codeactions)** (`davidfeldhoff.al-codeactions`) — Adds useful AL code actions that automate common edits and reduce repetitive changes.
+- **[AL Formatter](https://marketplace.visualstudio.com/items?itemName=rasmus.al-formatter)** (`rasmus.al-formatter`) — Applies consistent indentation, casing, and variable ordering so AL code stays readable and review-friendly.
+- **[AL Language extension for Microsoft Dynamics 365 Business Central](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al)** (`ms-dynamics-smb.al`) — Provides Microsoft's core AL language support, compiler, debugger, IntelliSense, and project tooling. It is the foundation for Business Central development in VS Code.
+- **[AL Language Model Tools — MCP Bridge](https://marketplace.visualstudio.com/items?itemName=vjeko.vjeko-al-mcp-bridge)** (`vjeko.vjeko-al-mcp-bridge`) — Exposes AL language-model tools through a local MCP server, allowing compatible external coding agents to work with AL capabilities from VS Code.
+- **[AL Navigator](https://marketplace.visualstudio.com/items?itemName=wbrakowski.al-navigator)** (`wbrakowski.al-navigator`) — Speeds up navigation, variable creation, object-ID selection, field translation, and report-copying tasks in AL projects.
+- **[AL Object Designer](https://marketplace.visualstudio.com/items?itemName=martonsagi.al-object-designer)** (`martonsagi.al-object-designer`) — Provides an object-designer experience optimized for exploring and working with Business Central AL objects.
+- **[AL Test Runner](https://marketplace.visualstudio.com/items?itemName=jamespearson.al-test-runner)** (`jamespearson.al-test-runner`) — Makes AL tests easier to discover, run, and inspect directly from VS Code, shortening the feedback loop while developing.
+- **[AL Toolbox](https://marketplace.visualstudio.com/items?itemName=bartpermentier.al-toolbox)** (`bartpermentier.al-toolbox`) — Adds AL-focused regions and snippets that make frequently used structures quicker to create and organize.
+- **[AL Variable Helper](https://marketplace.visualstudio.com/items?itemName=rasmus.al-var-helper)** (`rasmus.al-var-helper`) — Suggests appropriate AL variable names, reducing naming effort and improving consistency.
+- **[AZ AL Dev Tools/AL Code Outline](https://marketplace.visualstudio.com/items?itemName=andrzejzwierzchowski.al-code-outline)** (`andrzejzwierzchowski.al-code-outline`) — Adds a code outline, object browser, and object-creation tools for faster exploration and authoring of AL solutions.
+- **[Bracket Select](https://marketplace.visualstudio.com/items?itemName=chunsen.bracket-select)** (`chunsen.bracket-select`) — Quickly selects content between matching brackets, which is helpful when editing nested AL expressions and blocks.
+- **[Business Central Developer's Toolset](https://marketplace.visualstudio.com/items?itemName=dam-pav.bc-dev-toolset)** (`dam-pav.bc-dev-toolset`) — Manages Business Central development environments, containers, backups, and workspaces from a unified toolset.
+- **[BusinessCentral.LinterCop](https://marketplace.visualstudio.com/items?itemName=stefanmaron.businesscentral-lintercop)** (`stefanmaron.businesscentral-lintercop`) — Adds AL linting that catches quality and style issues earlier, helping teams maintain healthier codebases.
+- **[Create GUID](https://marketplace.visualstudio.com/items?itemName=nwallace.createguid)** (`nwallace.createguid`) — Generates GUIDs from the Command Palette, avoiding context switches when AL or configuration files need unique identifiers.
+- **[Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)** (`ms-azuretools.vscode-docker`) — Adds Docker image, container, registry, and debugging workflows that support container-based Business Central development.
+- **[Dynamics NAV C/Side Theme](https://marketplace.visualstudio.com/items?itemName=martonsagi.nav-cside-color-theme)** (`martonsagi.nav-cside-color-theme`) — Recreates the familiar Dynamics NAV C/SIDE color palette for developers who prefer that visual environment.
+- **[GitHub Actions](https://marketplace.visualstudio.com/items?itemName=github.vscode-github-actions)** (`github.vscode-github-actions`) — Lets developers inspect workflows, runs, logs, and workflow syntax without leaving VS Code.
+- **[GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=github.vscode-pull-request-github)** (`github.vscode-pull-request-github`) — Brings pull-request and issue review workflows into VS Code, reducing browser switching during collaboration.
+- **[GitHub Repositories](https://marketplace.visualstudio.com/items?itemName=github.remotehub)** (`github.remotehub`) — Allows remote GitHub repositories to be browsed and edited without requiring a full local clone.
+- **[GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)** (`eamodio.gitlens`) — Adds rich authorship, history, comparison, and repository insights that make changes easier to understand and troubleshoot.
+- **[NAB AL Tools](https://marketplace.visualstudio.com/items?itemName=nabsolutions.nab-al-tools)** (`nabsolutions.nab-al-tools`) — Supports AL development and translation management, simplifying localization and other extension-maintenance tasks.
+- **[Office Viewer](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-office)** (`cweijan.vscode-office`) — Opens common Office documents and provides a WYSIWYG Markdown editor inside VS Code, keeping project documentation close to the code.
+- **[Partial Diff](https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff)** (`ryu1kn.partial-diff`) — Compares selected text across files or against the clipboard, making small code and configuration differences easy to spot.
+- **[PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.powershell)** (`ms-vscode.powershell`) — Provides IntelliSense, debugging, and authoring support for the PowerShell scripts commonly used in Business Central automation.
+- **[TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)** (`wayou.vscode-todo-highlight`) — Makes TODO, FIXME, and custom annotations stand out in source files so important follow-up work is harder to miss.
+- **[Todo Tree](https://marketplace.visualstudio.com/items?itemName=gruntfuggly.todo-tree)** (`gruntfuggly.todo-tree`) — Collects TODO and FIXME annotations into a navigable tree, giving developers a project-wide view of pending work.
+- **[vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)** (`vscode-icons-team.vscode-icons`) — Adds clear file and folder icons that make larger AL workspaces faster to scan and navigate.
+- **[waldo's CRS AL Language Extension](https://marketplace.visualstudio.com/items?itemName=waldo.crs-al-language-extension)** (`waldo.crs-al-language-extension`) — Adds productivity commands and helpers that streamline everyday AL development and workspace maintenance.
+- **[AL Object ID Ninja](https://marketplace.visualstudio.com/items?itemName=vjeko.vjeko-al-objid)** (`vjeko.vjeko-al-objid`) — Coordinates AL object IDs in multi-user environments, reducing collisions when several developers work in the same ranges.
+- **[BC Code Intelligence](https://marketplace.visualstudio.com/items?itemName=jeremyvyska.bc-code-intelligence)** (`jeremyvyska.bc-code-intelligence`) — Provides an AI-powered Business Central development assistant with specialist personas for AL-focused guidance.
 
-VS Code's public Extension API does not permit one extension to disable another. On first activation, Business Central Developer's Stack therefore asks the user to review these two extensions and opens the Extensions view so they can be disabled. The prompt can be reopened with **Business Central Developer's Stack: Review Optional Extensions**.
+## Optional extensions
 
-## Releases
+AL Object ID Ninja and BC Code Intelligence are installed with the stack but intentionally presented as optional because object-ID governance and AI-assisted development depend on team preferences. VS Code does not allow an extension pack to disable another extension automatically, so the stack prompts you to review these two extensions and opens the Extensions view where you can disable either one.
 
-The first successful release from an untagged repository publishes version `0.0.0`. Later releases are generated from Conventional Commits merged into `main`:
-
-- `fix:` creates a patch release.
-- `feat:` creates a minor release.
-- `BREAKING CHANGE:` or `!` creates a major release.
-
-The release workflow creates one VSIX and publishes that exact file to the Visual Studio Marketplace, GitHub Container Registry (`ghcr.io/dam-pav/bc-dev-stack`), and the matching GitHub Release. The repository manifest remains at the bootstrap version `0.0.0`; the release workflow writes the calculated version into the packaged artifact.
-
-Repository setup requires a `VSCE_PAT` secret with permission to publish as the `dam-pav` Marketplace publisher. The built-in `GITHUB_TOKEN` publishes tags, releases, and the GHCR package.
-
-## Development
-
-```sh
-npm ci
-npm run check
-npm run package
-```
+To revisit that choice later, run **Business Central Developer's Stack: Review Optional Extensions** from the Command Palette.
