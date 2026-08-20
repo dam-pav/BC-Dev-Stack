@@ -43,7 +43,7 @@
     "andrzejzwierzchowski.al-code-outline",
     "chunsen.bracket-select",
     "dam-pav.bc-dev-toolset",
-    "stefanmaron.businesscentral-lintercop",
+    "arthurvdv.alcops",
     "nwallace.createguid",
     "ms-azuretools.vscode-docker",
     "martonsagi.nav-cside-color-theme",
@@ -60,7 +60,7 @@
     "vscode-icons-team.vscode-icons",
     "waldo.crs-al-language-extension",
     "vjeko.vjeko-al-objid",
-    "jeremyvyska.bc-code-intelligence"
+    "theframework.acdc"
   ],
   "contributes": {
     "commands": [

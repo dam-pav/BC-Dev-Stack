@@ -4,10 +4,6 @@ const OPTIONAL_EXTENSIONS = [
   {
     id: 'vjeko.vjeko-al-objid',
     label: 'AL Object ID Ninja'
-  },
-  {
-    id: 'jeremyvyska.bc-code-intelligence',
-    label: 'BC Code Intelligence'
   }
 ] as const;
 
@@ -19,7 +15,7 @@ async function reviewOptionalExtensions(): Promise<void> {
     .join('\n');
 
   const choice = await vscode.window.showInformationMessage(
-    `Business Central Developer's Stack installs these optional extensions in a disabled-by-default role. VS Code does not allow extension packs to disable other extensions automatically. Disable any you do not want from the Extensions view:\n\n${extensionList}`,
+    `Business Central Developer's Stack installs this optional extension in a disabled-by-default role. VS Code does not allow extension packs to disable other extensions automatically. Disable it from the Extensions view if you do not want it:\n\n${extensionList}`,
     { modal: true },
     'Open Extensions'
   );

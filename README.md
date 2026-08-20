@@ -16,7 +16,7 @@ Business Central Developer's Stack is a curated VS Code extension pack for Micro
 - **[AZ AL Dev Tools/AL Code Outline](https://marketplace.visualstudio.com/items?itemName=andrzejzwierzchowski.al-code-outline)** (`andrzejzwierzchowski.al-code-outline`) — Adds a code outline, object browser, and object-creation tools for faster exploration and authoring of AL solutions.
 - **[Bracket Select](https://marketplace.visualstudio.com/items?itemName=chunsen.bracket-select)** (`chunsen.bracket-select`) — Quickly selects content between matching brackets, which is helpful when editing nested AL expressions and blocks.
 - **[Business Central Developer's Toolset](https://marketplace.visualstudio.com/items?itemName=dam-pav.bc-dev-toolset)** (`dam-pav.bc-dev-toolset`) — Manages Business Central development environments, containers, backups, and workspaces from a unified toolset.
-- **[BusinessCentral.LinterCop](https://marketplace.visualstudio.com/items?itemName=stefanmaron.businesscentral-lintercop)** (`stefanmaron.businesscentral-lintercop`) — Adds AL linting that catches quality and style issues earlier, helping teams maintain healthier codebases.
+- **[ALCops](https://marketplace.visualstudio.com/items?itemName=arthurvdv.alcops)** (`arthurvdv.alcops`) — Integrates ALCops analyzers for AL and keeps them available and up to date for Business Central development.
 - **[Create GUID](https://marketplace.visualstudio.com/items?itemName=nwallace.createguid)** (`nwallace.createguid`) — Generates GUIDs from the Command Palette, avoiding context switches when AL or configuration files need unique identifiers.
 - **[Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)** (`ms-azuretools.vscode-docker`) — Adds Docker image, container, registry, and debugging workflows that support container-based Business Central development.
 - **[Dynamics NAV C/Side Theme](https://marketplace.visualstudio.com/items?itemName=martonsagi.nav-cside-color-theme)** (`martonsagi.nav-cside-color-theme`) — Recreates the familiar Dynamics NAV C/SIDE color palette for developers who prefer that visual environment.
@@ -33,10 +33,10 @@ Business Central Developer's Stack is a curated VS Code extension pack for Micro
 - **[vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)** (`vscode-icons-team.vscode-icons`) — Adds clear file and folder icons that make larger AL workspaces faster to scan and navigate.
 - **[waldo's CRS AL Language Extension](https://marketplace.visualstudio.com/items?itemName=waldo.crs-al-language-extension)** (`waldo.crs-al-language-extension`) — Adds productivity commands and helpers that streamline everyday AL development and workspace maintenance.
 - **[AL Object ID Ninja](https://marketplace.visualstudio.com/items?itemName=vjeko.vjeko-al-objid)** (`vjeko.vjeko-al-objid`) — Coordinates AL object IDs in multi-user environments, reducing collisions when several developers work in the same ranges.
-- **[BC Code Intelligence](https://marketplace.visualstudio.com/items?itemName=jeremyvyska.bc-code-intelligence)** (`jeremyvyska.bc-code-intelligence`) — Provides an AI-powered Business Central development assistant with specialist personas for AL-focused guidance.
+- **[Agentic Coding Direct Coding](https://marketplace.visualstudio.com/items?itemName=theframework.acdc)** (`theframework.acdc`) — Provides spec-driven, TDD-oriented AI development workflows and specialized agents for Business Central AL projects.
 
 ## Optional extensions
 
-AL Object ID Ninja and BC Code Intelligence are installed with the stack but intentionally presented as optional because object-ID governance and AI-assisted development depend on team preferences. VS Code does not allow an extension pack to disable another extension automatically, so the stack opens both exact Extensions view entries where you can disable either one.
+AL Object ID Ninja is installed with the stack but intentionally presented as optional because object-ID governance depends on team preferences. VS Code does not allow an extension pack to disable another extension automatically, so the stack opens its exact Extensions view entry where you can disable it.
 
 To revisit that choice later, run **Business Central Developer's Stack: Review Optional Extensions** from the Command Palette.
