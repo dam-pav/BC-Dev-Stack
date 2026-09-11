@@ -10,3 +10,4 @@ out/
 
 # Editor-local files
 .vscode-test/
+.vscode
