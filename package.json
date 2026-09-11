@@ -43,11 +43,13 @@
     "andrzejzwierzchowski.al-code-outline",
     "chunsen.bracket-select",
     "dam-pav.bc-dev-toolset",
-    "stefanmaron.businesscentral-lintercop",
+    "arthurvdv.alcops",
+    "streetsidesoftware.code-spell-checker",
     "nwallace.createguid",
     "ms-azuretools.vscode-docker",
     "martonsagi.nav-cside-color-theme",
     "github.vscode-github-actions",
+    "ms-vscode.vscode-github-issue-notebooks",
     "github.vscode-pull-request-github",
     "github.remotehub",
     "eamodio.gitlens",
@@ -60,7 +62,7 @@
     "vscode-icons-team.vscode-icons",
     "waldo.crs-al-language-extension",
     "vjeko.vjeko-al-objid",
-    "jeremyvyska.bc-code-intelligence"
+    "theframework.acdc"
   ],
   "contributes": {
     "commands": [
