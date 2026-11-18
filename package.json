@@ -61,8 +61,7 @@
     "gruntfuggly.todo-tree",
     "vscode-icons-team.vscode-icons",
     "waldo.crs-al-language-extension",
-    "vjeko.vjeko-al-objid",
-    "theframework.acdc"
+    "vjeko.vjeko-al-objid"
   ],
   "contributes": {
     "commands": [
