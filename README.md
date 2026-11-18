@@ -35,7 +35,6 @@ Business Central Developer's Stack is a curated VS Code extension pack for Micro
 - **[vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)** (`vscode-icons-team.vscode-icons`) — Adds clear file and folder icons that make larger AL workspaces faster to scan and navigate.
 - **[waldo's CRS AL Language Extension](https://marketplace.visualstudio.com/items?itemName=waldo.crs-al-language-extension)** (`waldo.crs-al-language-extension`) — Adds productivity commands and helpers that streamline everyday AL development and workspace maintenance.
 - **[AL Object ID Ninja](https://marketplace.visualstudio.com/items?itemName=vjeko.vjeko-al-objid)** (`vjeko.vjeko-al-objid`) — Coordinates AL object IDs in multi-user environments, reducing collisions when several developers work in the same ranges.
-- **[Agentic Coding Direct Coding](https://marketplace.visualstudio.com/items?itemName=theframework.acdc)** (`theframework.acdc`) — Provides spec-driven, TDD-oriented AI development workflows and specialized agents for Business Central AL projects.
 
 ## Optional extensions
 
